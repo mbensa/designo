@@ -1,0 +1,90 @@
+/****************************************
+*************Global Config***************
+****************************************/
+
+//Font stack
+$font: "Jost", sans-serif;
+
+//Colors
+$peach: #e7816b;
+$black: #1d1c1e;
+$white: #ffffff;
+$light-peach: #ffad9b;
+$dark-grey: #333136;
+$light-grey: #f1f3f5;
+
+//Text
+$font-base-size: 1rem;
+$text-line-height: 1.625rem;
+
+//General styling
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: $font;
+  font-size: $font-base-size;
+  line-height: $text-line-height;
+  font-weight: 400;
+
+  @media (min-width: 768px) {
+    padding: 0 40px;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 0 165px;
+  }
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 2.25rem;
+  font-weight: 500;
+
+  @media (min-width: 768px) {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+}
+
+h2 {
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  font-weight: 500;
+
+  @media (min-width: 768px) {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+}
+
+h3 {
+  font-size: 1.25rem;
+  line-height: 1.625rem;
+  font-weight: 500;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: $black;
+  text-decoration: none;
+}
+
+//Mixins
+@mixin margin {
+  margin: 96px 0;
+
+  @media (min-width: 768px) {
+    margin: 120px 0;
+  }
+  @media (min-width: 1024px) {
+    margin: 160px 0;
+  }
+}
