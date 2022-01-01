@@ -1,0 +1,16 @@
+{
+  "name": "designo",
+  "version": "1.0.0",
+  "description": "![Design preview for the Designo agency website coding challenge](./preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass-build": "node-sass scss/style.scss css/style.css",
+    "sass": "node-sass -w scss/style.scss css/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
