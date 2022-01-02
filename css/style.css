@@ -377,7 +377,8 @@ a {
         padding: 48px 24px; }
         .navbar .nav-menu.active {
           left: 0;
-          margin-top: 35px; } }
+          margin-top: 35px;
+          z-index: 200; } }
     @media (max-width: 768px) {
       .navbar .nav-menu .nav-item {
         margin-bottom: 32px; }
@@ -408,3 +409,99 @@ a {
       -webkit-transition: all 0.3s ease;
       transition: all 0.3s ease;
       background-color: #1d1c1e; }
+
+/****************************************
+**************Intro section**************
+****************************************/
+.intro-container {
+  background-color: #e7816b;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin-bottom: 120px; }
+  .intro-container .intro-bg-circle {
+    position: absolute;
+    margin: 80px 0;
+    max-width: 100vw;
+    overflow: hidden; }
+  .intro-container .intro-text-container {
+    padding: 80px 25px 0 25px;
+    color: white;
+    text-align: center;
+    z-index: 2; }
+    .intro-container .intro-text-container h1 {
+      padding-bottom: 18px; }
+    .intro-container .intro-text-container p {
+      padding-bottom: 40px; }
+    .intro-container .intro-text-container .intro-text-link {
+      background-color: #ffffff;
+      padding: 16px 24px;
+      border-radius: 8px;
+      font-weight: 500; }
+  .intro-container .intro-img-container {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center; }
+    .intro-container .intro-img-container .intro-img {
+      margin-bottom: -220px;
+      filter: drop-shadow(20px -40px 80px rgba(93, 2, 2, 0.497569)); }
+
+/****************************************
+************Projects section*************
+****************************************/
+.design-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .design-container .web-project-container {
+    background-image: url(../assets/home/mobile/image-web-design.jpg); }
+  .design-container .app-project-container {
+    background-image: url(../assets/home/mobile/image-app-design.jpg); }
+  .design-container .graphic-project-container {
+    background-image: url(../assets/home/mobile/image-graphic-design.jpg); }
+  .design-container .project-container {
+    background-size: cover;
+    padding: 90px 0;
+    text-align: center;
+    border-radius: 15px;
+    margin: 0 24px 24px 24px;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+    color: white; }
+    .design-container .project-container:last-child {
+      margin-bottom: 120px; }
+    .design-container .project-container h2 {
+      margin-bottom: 12px; }
+    .design-container .project-container .project-text-container {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .design-container .project-container .project-text-container p {
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 1.375rem;
+        letter-spacing: 5px;
+        padding-right: 15px; }
+      .design-container .project-container .project-text-container img {
+        height: 100%; }
+
+/****************************************
+*************Traits section**************
+****************************************/
+.description-container {
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column; }
+  .description-container .traits-container {
+    text-align: center;
+    margin-bottom: 80px; }
+    .description-container .traits-container:last-child {
+      margin-bottom: 310px; }
+    .description-container .traits-container .traits-image {
+      text-align: center; }
+      .description-container .traits-container .traits-image .bg-circle {
+        position: absolute;
+        width: 220px;
+        z-index: -2; }
+    .description-container .traits-container h3 {
+      margin: 48px 0 32px 0; }

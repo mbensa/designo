@@ -1,0 +1,138 @@
+/****************************************
+**************Intro section**************
+****************************************/
+.intro-container {
+  background-color: $peach;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin-bottom: 120px;
+
+  .intro-bg-circle {
+    position: absolute;
+    margin: 80px 0;
+    max-width: 100vw;
+    overflow: hidden;
+  }
+
+  .intro-text-container {
+    padding: 80px 25px 0 25px;
+    color: white;
+    text-align: center;
+    z-index: 2;
+
+    h1 {
+      padding-bottom: 18px;
+    }
+
+    p {
+      padding-bottom: 40px;
+    }
+
+    .intro-text-link {
+      background-color: $white;
+      padding: 16px 24px;
+      border-radius: 8px;
+      font-weight: 500;
+    }
+  }
+
+  .intro-img-container {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+
+    .intro-img {
+      margin-bottom: -220px;
+      filter: drop-shadow(20px -40px 80px rgba(93, 2, 2, 0.497569));
+    }
+  }
+}
+
+/****************************************
+************Projects section*************
+****************************************/
+.design-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .web-project-container {
+    background-image: url(../assets/home/mobile/image-web-design.jpg);
+  }
+
+  .app-project-container {
+    background-image: url(../assets/home/mobile/image-app-design.jpg);
+  }
+
+  .graphic-project-container {
+    background-image: url(../assets/home/mobile/image-graphic-design.jpg);
+  }
+
+  .project-container {
+    background-size: cover;
+    padding: 90px 0;
+    text-align: center;
+    border-radius: 15px;
+    margin: 0 24px 24px 24px;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+    color: white;
+    &:last-child {
+      margin-bottom: 120px;
+    }
+
+    h2 {
+      margin-bottom: 12px;
+    }
+
+    .project-text-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      p {
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 1.375rem;
+        letter-spacing: 5px;
+        padding-right: 15px;
+      }
+
+      img {
+        height: 100%;
+      }
+    }
+  }
+}
+
+/****************************************
+*************Traits section**************
+****************************************/
+.description-container {
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+
+  .traits-container {
+    text-align: center;
+    margin-bottom: 80px;
+    &:last-child {
+      margin-bottom: 310px;
+    }
+
+    .traits-image {
+      text-align: center;
+
+      .bg-circle {
+        position: absolute;
+        width: 220px;
+        z-index: -2;
+      }
+    }
+
+    h3 {
+      margin: 48px 0 32px 0;
+    }
+  }
+}
