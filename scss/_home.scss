@@ -118,7 +118,7 @@
     text-align: center;
     margin-bottom: 80px;
     &:last-child {
-      margin-bottom: 310px;
+      margin-bottom: 120px;
     }
 
     .traits-image {
@@ -133,6 +133,47 @@
 
     h3 {
       margin: 48px 0 32px 0;
+    }
+  }
+}
+
+/****************************************
+************Contact section**************
+****************************************/
+.contact-container {
+  background-image: url(../assets/shared/desktop/bg-pattern-call-to-action.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: $peach;
+  margin: 0 24px;
+  padding: 64px 24px;
+  border-radius: 15px;
+  color: white;
+  transform: skew(0deg);
+  margin-bottom: -170px;
+
+  .contact-text {
+    .contact-text-title {
+      font-size: 2rem;
+      line-height: 2.25rem;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+
+    .contact-text-description {
+      margin-bottom: 48px;
+    }
+  }
+
+  .contact-link {
+    a {
+      background-color: $white;
+      padding: 16px 24px;
+      border-radius: 8px;
+      font-weight: 500;
     }
   }
 }

@@ -496,7 +496,7 @@ a {
     text-align: center;
     margin-bottom: 80px; }
     .description-container .traits-container:last-child {
-      margin-bottom: 310px; }
+      margin-bottom: 120px; }
     .description-container .traits-container .traits-image {
       text-align: center; }
       .description-container .traits-container .traits-image .bg-circle {
@@ -505,3 +505,74 @@ a {
         z-index: -2; }
     .description-container .traits-container h3 {
       margin: 48px 0 32px 0; }
+
+/****************************************
+************Contact section**************
+****************************************/
+.contact-container {
+  background-image: url(../assets/shared/desktop/bg-pattern-call-to-action.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #e7816b;
+  margin: 0 24px;
+  padding: 64px 24px;
+  border-radius: 15px;
+  color: white;
+  transform: skew(0deg);
+  margin-bottom: -170px; }
+  .contact-container .contact-text .contact-text-title {
+    font-size: 2rem;
+    line-height: 2.25rem;
+    font-weight: 500;
+    margin-bottom: 20px; }
+  .contact-container .contact-text .contact-text-description {
+    margin-bottom: 48px; }
+  .contact-container .contact-link a {
+    background-color: #ffffff;
+    padding: 16px 24px;
+    border-radius: 8px;
+    font-weight: 500; }
+
+/****************************************
+*****************Footer******************
+****************************************/
+.footer-container {
+  background-color: #1d1c1e;
+  padding: 250px 24px 60px 24px;
+  color: white;
+  text-align: center; }
+  .footer-container img {
+    max-width: 60%; }
+  .footer-container hr {
+    height: 1px;
+    border: none;
+    background-color: white;
+    opacity: 0.1;
+    margin: 32px 0; }
+  .footer-container .footer-nav-menu {
+    font-size: 0.875rem;
+    line-height: 0.875rem;
+    letter-spacing: 2px;
+    opacity: 0.5; }
+    .footer-container .footer-nav-menu li {
+      margin-bottom: 32px; }
+      .footer-container .footer-nav-menu li:last-child {
+        margin-bottom: 40px; }
+  .footer-container .footer-office-info {
+    opacity: 0.5;
+    margin-bottom: 40px; }
+    .footer-container .footer-office-info p:first-child {
+      font-weight: 500; }
+  .footer-container .footer-contact-info {
+    opacity: 0.5;
+    margin-bottom: 40px; }
+    .footer-container .footer-contact-info p:first-child {
+      font-weight: 500; }
+  .footer-container .footer-social-media img {
+    padding-right: 15px;
+    cursor: pointer; }
+    .footer-container .footer-social-media img:last-child {
+      padding-right: 0; }
