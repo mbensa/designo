@@ -11,18 +11,28 @@
   background-position: left;
   background-repeat: no-repeat;
 
+  @media (min-width: 768px) {
+    border-radius: 15px;
+  }
+
   .intro-text-container {
-    padding: 80px 25px 0 25px;
+    margin: 80px 25px 0 25px;
     color: white;
     text-align: center;
     z-index: 2;
+    @media (min-width: 768px) {
+      margin: 60px 58px;
+    }
 
     h1 {
-      padding-bottom: 18px;
+      padding-bottom: 20px;
     }
 
     p {
       padding-bottom: 40px;
+      @media (min-width: 768px) {
+        padding: 0 55px 40px 55px;
+      }
     }
 
     .intro-text-link {
@@ -37,6 +47,9 @@
     margin-top: 80px;
     display: flex;
     justify-content: center;
+    @media (min-width: 768px) {
+      margin-top: 10px;
+    }
 
     .intro-img {
       margin-bottom: -220px;
@@ -67,6 +80,7 @@
 
   .project-container {
     background-size: cover;
+    cursor: pointer;
     padding: 90px 0;
     text-align: center;
     border-radius: 15px;
@@ -76,6 +90,10 @@
     color: white;
     &:last-child {
       margin-bottom: 120px;
+    }
+
+    @media (min-width: 768px) {
+      margin: 0 0 24px 0;
     }
 
     h2 {
@@ -109,6 +127,9 @@
   padding: 0 24px;
   display: flex;
   flex-direction: column;
+  @media (min-width: 768px) {
+    padding: 0;
+  }
 
   .traits-container {
     text-align: center;
@@ -117,8 +138,16 @@
       margin-bottom: 120px;
     }
 
+    @media (min-width: 768px) {
+      display: flex;
+      align-items: center;
+    }
+
     .traits-image {
       text-align: center;
+      @media (min-width: 768px) {
+        margin-right: 50px;
+      }
 
       .bg-circle {
         position: absolute;
@@ -126,9 +155,16 @@
         z-index: -2;
       }
     }
-
-    h3 {
-      margin: 48px 0 32px 0;
+    .traits-description {
+      @media (min-width: 768px) {
+        text-align: left;
+      }
+      h3 {
+        margin: 48px 0 32px 0;
+        @media (min-width: 768px) {
+          margin: 0;
+        }
+      }
     }
   }
 }
@@ -150,6 +186,10 @@
   color: white;
   transform: skew(0deg);
   margin-bottom: -170px;
+  @media (min-width: 768px) {
+    margin: 0 0 -170px 0;
+    padding: 64px 100px;
+  }
 
   .contact-text {
     .contact-text-title {

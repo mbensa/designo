@@ -313,10 +313,10 @@ html {
   font-weight: 400; }
   @media (min-width: 768px) {
     html {
-      padding: 0 40px; } }
+      margin: 0 40px; } }
   @media (min-width: 1024px) {
     html {
-      padding: 0 165px; } }
+      margin: 0 165px; } }
 
 h1 {
   font-size: 2rem;
@@ -422,15 +422,24 @@ a {
   background-image: url(../assets/home/desktop/bg-pattern-hero-home.svg);
   background-position: left;
   background-repeat: no-repeat; }
+  @media (min-width: 768px) {
+    .intro-container {
+      border-radius: 15px; } }
   .intro-container .intro-text-container {
-    padding: 80px 25px 0 25px;
+    margin: 80px 25px 0 25px;
     color: white;
     text-align: center;
     z-index: 2; }
+    @media (min-width: 768px) {
+      .intro-container .intro-text-container {
+        margin: 60px 58px; } }
     .intro-container .intro-text-container h1 {
-      padding-bottom: 18px; }
+      padding-bottom: 20px; }
     .intro-container .intro-text-container p {
       padding-bottom: 40px; }
+      @media (min-width: 768px) {
+        .intro-container .intro-text-container p {
+          padding: 0 55px 40px 55px; } }
     .intro-container .intro-text-container .intro-text-link {
       background-color: #ffffff;
       padding: 16px 24px;
@@ -440,6 +449,9 @@ a {
     margin-top: 80px;
     display: flex;
     justify-content: center; }
+    @media (min-width: 768px) {
+      .intro-container .intro-img-container {
+        margin-top: 10px; } }
     .intro-container .intro-img-container .intro-img {
       margin-bottom: -220px;
       filter: drop-shadow(20px -40px 80px rgba(93, 2, 2, 0.497569)); }
@@ -459,6 +471,7 @@ a {
     background-image: url(../assets/home/mobile/image-graphic-design.jpg); }
   .design-container .project-container {
     background-size: cover;
+    cursor: pointer;
     padding: 90px 0;
     text-align: center;
     border-radius: 15px;
@@ -468,6 +481,9 @@ a {
     color: white; }
     .design-container .project-container:last-child {
       margin-bottom: 120px; }
+    @media (min-width: 768px) {
+      .design-container .project-container {
+        margin: 0 0 24px 0; } }
     .design-container .project-container h2 {
       margin-bottom: 12px; }
     .design-container .project-container .project-text-container {
@@ -490,19 +506,35 @@ a {
   padding: 0 24px;
   display: flex;
   flex-direction: column; }
+  @media (min-width: 768px) {
+    .description-container {
+      padding: 0; } }
   .description-container .traits-container {
     text-align: center;
     margin-bottom: 80px; }
     .description-container .traits-container:last-child {
       margin-bottom: 120px; }
+    @media (min-width: 768px) {
+      .description-container .traits-container {
+        display: flex;
+        align-items: center; } }
     .description-container .traits-container .traits-image {
       text-align: center; }
+      @media (min-width: 768px) {
+        .description-container .traits-container .traits-image {
+          margin-right: 50px; } }
       .description-container .traits-container .traits-image .bg-circle {
         position: absolute;
         width: 220px;
         z-index: -2; }
-    .description-container .traits-container h3 {
+    @media (min-width: 768px) {
+      .description-container .traits-container .traits-description {
+        text-align: left; } }
+    .description-container .traits-container .traits-description h3 {
       margin: 48px 0 32px 0; }
+      @media (min-width: 768px) {
+        .description-container .traits-container .traits-description h3 {
+          margin: 0; } }
 
 /****************************************
 ************Contact section**************
@@ -521,6 +553,10 @@ a {
   color: white;
   transform: skew(0deg);
   margin-bottom: -170px; }
+  @media (min-width: 768px) {
+    .contact-container {
+      margin: 0 0 -170px 0;
+      padding: 64px 100px; } }
   .contact-container .contact-text .contact-text-title {
     font-size: 2rem;
     line-height: 2.25rem;
