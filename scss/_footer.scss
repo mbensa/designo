@@ -43,6 +43,7 @@
       line-height: 0.875rem;
       letter-spacing: 2px;
       cursor: pointer;
+
       @media (min-width: 768px) {
         display: flex;
         align-items: center;
@@ -54,12 +55,14 @@
         &:last-child {
           margin-bottom: 40px;
         }
+
         @media (min-width: 768px) {
           margin-bottom: 0;
           &:last-child {
             margin-bottom: 0;
           }
         }
+
         @media (min-width: 1280px) {
           &:hover {
             text-decoration: underline;
@@ -73,6 +76,7 @@
 
   .hr-tablet {
     display: none;
+
     @media (min-width: 768px) {
       display: block;
       height: 1px;
@@ -138,9 +142,11 @@
       svg {
         margin-right: 15px;
         cursor: pointer;
+
         &:last-child {
           margin-right: 0;
         }
+
         path {
           &:hover {
             fill: $light-peach;

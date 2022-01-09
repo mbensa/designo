@@ -255,15 +255,18 @@
       @media (min-width: 768px) {
         text-align: left;
       }
+
       @media (min-width: 1280px) {
         text-align: center;
       }
 
       h3 {
         margin: 48px 0 32px 0;
+
         @media (min-width: 768px) {
           margin: 0;
         }
+
         @media (min-width: 1280px) {
           margin-bottom: 30px;
         }
