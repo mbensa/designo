@@ -128,14 +128,16 @@
     }
 
     .footer-social-media {
-      img {
-        padding-right: 15px;
+      svg {
+        margin-right: 15px;
         cursor: pointer;
         &:last-child {
-          padding-right: 0;
+          margin-right: 0;
         }
-        &:hover {
-          fill: $light-peach;
+        path {
+          &:hover {
+            fill: $light-peach;
+          }
         }
       }
     }
