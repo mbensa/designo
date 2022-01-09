@@ -7,7 +7,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 35px 24px;
+  padding: 35px 0;
+  margin: 0 165px;
+  @media (max-width: 1279px) {
+    margin: 0 40px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 35px 24px;
+    margin: 0;
+  }
 
   img {
     max-height: 27px;
@@ -17,9 +26,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 60px;
+    gap: 35px;
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       position: fixed;
       left: -100%;
       top: 65px;
@@ -38,7 +47,7 @@
     }
 
     .nav-item {
-      @media (max-width: 768px) {
+      @media (max-width: 767px) {
         margin-bottom: 32px;
 
         &:last-child {
@@ -49,7 +58,7 @@
       .nav-link {
         transition: 0.3s ease-out;
 
-        @media (max-width: 768px) {
+        @media (max-width: 767px) {
           color: white;
         }
       }
@@ -60,7 +69,7 @@
     display: none;
     cursor: pointer;
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       display: block;
 
       &.active .bar:nth-child(2) {
