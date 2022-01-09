@@ -59,6 +59,10 @@
       padding: 16px 24px;
       border-radius: 8px;
       font-weight: 500;
+      &:hover {
+        background-color: $light-peach;
+        color: white;
+      }
     }
   }
 
@@ -164,7 +168,9 @@
     padding: 90px 65px;
     position: relative;
     &:hover {
-      background-color: $peach;
+      .project-overlay {
+        background-color: $peach;
+      }
     }
 
     .project-overlay {
@@ -307,6 +313,10 @@
       padding: 16px 24px;
       border-radius: 8px;
       font-weight: 500;
+      &:hover {
+        background-color: $light-peach;
+        color: white;
+      }
     }
   }
 }

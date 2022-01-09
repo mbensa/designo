@@ -134,6 +134,9 @@
         &:last-child {
           padding-right: 0;
         }
+        &:hover {
+          fill: $light-peach;
+        }
       }
     }
   }

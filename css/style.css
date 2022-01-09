@@ -471,6 +471,9 @@ a {
       padding: 16px 24px;
       border-radius: 8px;
       font-weight: 500; }
+      .intro-container .intro-text-container .intro-text-link:hover {
+        background-color: #ffad9b;
+        color: white; }
   .intro-container .intro-img-container {
     margin-top: 80px;
     display: flex;
@@ -547,7 +550,7 @@ a {
     color: white;
     padding: 90px 65px;
     position: relative; }
-    .design-container .project-container:hover {
+    .design-container .project-container:hover .project-overlay {
       background-color: #e7816b; }
     .design-container .project-container .project-overlay {
       position: absolute;
@@ -658,6 +661,9 @@ a {
     padding: 16px 24px;
     border-radius: 8px;
     font-weight: 500; }
+    .contact-container .contact-link a:hover {
+      background-color: #ffad9b;
+      color: white; }
 
 /****************************************
 *****************Footer******************
@@ -756,3 +762,5 @@ a {
     cursor: pointer; }
     .footer-container .footer-contact-container .footer-social-media img:last-child {
       padding-right: 0; }
+    .footer-container .footer-contact-container .footer-social-media img:hover {
+      fill: #ffad9b; }
