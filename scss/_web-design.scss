@@ -1,0 +1,90 @@
+/****************************************
+**************Intro Section**************
+****************************************/
+.web-intro-container {
+  background-color: $peach;
+  background-image: url(../assets/web-design/desktop/bg-pattern-intro-web.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 105px 24px;
+  text-align: center;
+  color: white;
+
+  @media (min-width: 768px) {
+    padding: 64px 150px;
+    border-radius: 15px;
+  }
+
+  h1 {
+    margin-bottom: 24px;
+  }
+}
+
+/****************************************
+*****************Projects****************
+****************************************/
+.web-projects-container {
+  margin: 96px 24px;
+
+  @media (min-width: 768px) {
+    margin: 96px 0;
+  }
+
+  @media (min-width: 1280px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .web-section-container {
+    background-color: $light-pink;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: 768px) {
+      display: flex;
+    }
+
+    @media (min-width: 1280px) {
+      flex-direction: column;
+      max-width: calc(100% / 3);
+    }
+
+    img {
+      max-width: 100%;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+
+      @media (min-width: 768px) {
+        width: 50%;
+      }
+
+      @media (min-width: 1280px) {
+        width: 100%;
+      }
+    }
+
+    .web-text-container {
+      padding: 32px 30px;
+      text-align: center;
+
+      @media (min-width: 768px) {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      @media (min-width: 1280px) {
+        width: 100%;
+      }
+
+      h3 {
+        color: $peach;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}

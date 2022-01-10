@@ -503,20 +503,30 @@ a {
 ****************************************/
 .design-container {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: "webProject" "appProject" "graphicProject";
   align-items: stretch;
   row-gap: 24px;
   margin: 0 24px 120px 24px; }
   @media (min-width: 768px) {
     .design-container {
       margin: 0 0 120px 0; } }
-  @media (min-width: 1280px) {
-    .design-container {
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      grid-template-areas: "webProject appProject" "webProject graphicProject";
-      column-gap: 24px; } }
+  .design-container.two-rows {
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "webProject" "appProject" "graphicProject"; }
+    @media (min-width: 1280px) {
+      .design-container.two-rows {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "webProject appProject" "webProject graphicProject";
+        column-gap: 24px; } }
+  .design-container[data-page="web-design"] {
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "appProject" "graphicProject"; }
+    @media (min-width: 1280px) {
+      .design-container[data-page="web-design"] {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "appProject graphicProject";
+        grid-template-rows: 1fr;
+        column-gap: 24px; } }
   .design-container .web-project-container {
     grid-area: webProject;
     background-image: url(../assets/home/mobile/image-web-design.jpg); }
@@ -654,6 +664,16 @@ a {
     .contact-container {
       margin: 0 0 -170px 0;
       padding: 64px 100px; } }
+  @media (min-width: 1280px) {
+    .contact-container {
+      flex-direction: row;
+      text-align: left;
+      align-items: center;
+      justify-content: space-between;
+      padding: 72px 100px; } }
+  @media (min-width: 1280px) {
+    .contact-container .contact-text {
+      max-width: 50%; } }
   .contact-container .contact-text .contact-text-title {
     font-size: 2rem;
     line-height: 2.25rem;
@@ -661,6 +681,9 @@ a {
     margin-bottom: 20px; }
   .contact-container .contact-text .contact-text-description {
     margin-bottom: 48px; }
+    @media (min-width: 1280px) {
+      .contact-container .contact-text .contact-text-description {
+        margin-bottom: 0; } }
   .contact-container .contact-link a {
     background-color: #ffffff;
     padding: 16px 24px;
@@ -774,3 +797,72 @@ a {
       margin-right: 0; }
     .footer-container .footer-contact-container .footer-social-media svg path:hover {
       fill: #ffad9b; }
+
+/****************************************
+**************Intro Section**************
+****************************************/
+.web-intro-container {
+  background-color: #e7816b;
+  background-image: url(../assets/web-design/desktop/bg-pattern-intro-web.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 105px 24px;
+  text-align: center;
+  color: white; }
+  @media (min-width: 768px) {
+    .web-intro-container {
+      padding: 64px 150px;
+      border-radius: 15px; } }
+  .web-intro-container h1 {
+    margin-bottom: 24px; }
+
+/****************************************
+*****************Projects****************
+****************************************/
+.web-projects-container {
+  margin: 96px 24px; }
+  @media (min-width: 768px) {
+    .web-projects-container {
+      margin: 96px 0; } }
+  @media (min-width: 1280px) {
+    .web-projects-container {
+      display: flex;
+      flex-wrap: wrap; } }
+  .web-projects-container .web-section-container {
+    background-color: #fdf3f0;
+    border-radius: 15px;
+    margin-bottom: 40px; }
+    .web-projects-container .web-section-container:last-child {
+      margin-bottom: 0; }
+    @media (min-width: 768px) {
+      .web-projects-container .web-section-container {
+        display: flex; } }
+    @media (min-width: 1280px) {
+      .web-projects-container .web-section-container {
+        flex-direction: column;
+        max-width: calc(100% / 3); } }
+    .web-projects-container .web-section-container img {
+      max-width: 100%;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px; }
+      @media (min-width: 768px) {
+        .web-projects-container .web-section-container img {
+          width: 50%; } }
+      @media (min-width: 1280px) {
+        .web-projects-container .web-section-container img {
+          width: 100%; } }
+    .web-projects-container .web-section-container .web-text-container {
+      padding: 32px 30px;
+      text-align: center; }
+      @media (min-width: 768px) {
+        .web-projects-container .web-section-container .web-text-container {
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center; } }
+      @media (min-width: 1280px) {
+        .web-projects-container .web-section-container .web-text-container {
+          width: 100%; } }
+      .web-projects-container .web-section-container .web-text-container h3 {
+        color: #e7816b;
+        margin-bottom: 15px; }

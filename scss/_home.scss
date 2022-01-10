@@ -95,11 +95,6 @@
 ****************************************/
 .design-container {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas:
-    "webProject"
-    "appProject"
-    "graphicProject";
   align-items: stretch;
   row-gap: 24px;
   margin: 0 24px 120px 24px;
@@ -108,13 +103,35 @@
     margin: 0 0 120px 0;
   }
 
-  @media (min-width: 1280px) {
-    grid-template-columns: 1fr 1fr;
+  &.two-rows {
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "webProject"
+      "appProject"
+      "graphicProject";
+
+    @media (min-width: 1280px) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:
+        "webProject appProject"
+        "webProject graphicProject";
+      column-gap: 24px;
+    }
+  }
+
+  &[data-page="web-design"] {
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
-      "webProject appProject"
-      "webProject graphicProject";
-    column-gap: 24px;
+      "appProject"
+      "graphicProject";
+
+    @media (min-width: 1280px) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "appProject graphicProject";
+      grid-template-rows: 1fr;
+      column-gap: 24px;
+    }
   }
 
   .web-project-container {
@@ -292,12 +309,25 @@
   color: white;
   transform: skew(0deg);
   margin-bottom: -170px;
+
   @media (min-width: 768px) {
     margin: 0 0 -170px 0;
     padding: 64px 100px;
   }
 
+  @media (min-width: 1280px) {
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+    justify-content: space-between;
+    padding: 72px 100px;
+  }
+
   .contact-text {
+    @media (min-width: 1280px) {
+      max-width: 50%;
+    }
+
     .contact-text-title {
       font-size: 2rem;
       line-height: 2.25rem;
@@ -307,6 +337,10 @@
 
     .contact-text-description {
       margin-bottom: 48px;
+
+      @media (min-width: 1280px) {
+        margin-bottom: 0;
+      }
     }
   }
 
