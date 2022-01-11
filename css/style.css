@@ -527,6 +527,15 @@ a {
         grid-template-areas: "appProject graphicProject";
         grid-template-rows: 1fr;
         column-gap: 24px; } }
+  .design-container[data-page="app-design"] {
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "webProject" "graphicProject"; }
+    @media (min-width: 1280px) {
+      .design-container[data-page="app-design"] {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "webProject graphicProject";
+        grid-template-rows: 1fr;
+        column-gap: 24px; } }
   .design-container .web-project-container {
     grid-area: webProject;
     background-image: url(../assets/home/mobile/image-web-design.jpg); }
