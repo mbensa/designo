@@ -98,26 +98,23 @@
   align-items: stretch;
   row-gap: 24px;
   margin: 0 24px 120px 24px;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "webProject"
+    "appProject"
+    "graphicProject";
 
   @media (min-width: 768px) {
     margin: 0 0 120px 0;
   }
 
-  &.two-rows {
-    grid-template-rows: 1fr 1fr 1fr;
+  @media (min-width: 1280px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas:
-      "webProject"
-      "appProject"
-      "graphicProject";
-
-    @media (min-width: 1280px) {
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      grid-template-areas:
-        "webProject appProject"
-        "webProject graphicProject";
-      column-gap: 24px;
-    }
+      "webProject appProject"
+      "webProject graphicProject";
+    column-gap: 24px;
   }
 
   &[data-page="web-design"] {
@@ -143,6 +140,20 @@
     @media (min-width: 1280px) {
       grid-template-columns: 1fr 1fr;
       grid-template-areas: "webProject graphicProject";
+      grid-template-rows: 1fr;
+      column-gap: 24px;
+    }
+  }
+
+  &[data-page="graphic-design"] {
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "appProject"
+      "webProject";
+
+    @media (min-width: 1280px) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "appProject webProject";
       grid-template-rows: 1fr;
       column-gap: 24px;
     }

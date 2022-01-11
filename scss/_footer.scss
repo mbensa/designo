@@ -109,6 +109,10 @@
         gap: 40px;
       }
 
+      @media (min-width: 1280px) {
+        gap: 200px;
+      }
+
       .footer-office-info {
         opacity: 0.5;
         margin-bottom: 40px;

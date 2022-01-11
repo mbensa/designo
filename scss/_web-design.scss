@@ -18,6 +18,12 @@
   h1 {
     margin-bottom: 24px;
   }
+
+  p {
+    @media (min-width: 1280px) {
+      padding: 0 200px;
+    }
+  }
 }
 
 /****************************************
@@ -49,6 +55,11 @@
     &:hover {
       background-color: $peach;
       color: white;
+      .web-text-container {
+        h3 {
+          color: white;
+        }
+      }
     }
 
     @media (min-width: 768px) {

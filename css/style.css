@@ -505,19 +505,18 @@ a {
   display: grid;
   align-items: stretch;
   row-gap: 24px;
-  margin: 0 24px 120px 24px; }
+  margin: 0 24px 120px 24px;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "webProject" "appProject" "graphicProject"; }
   @media (min-width: 768px) {
     .design-container {
       margin: 0 0 120px 0; } }
-  .design-container.two-rows {
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "webProject" "appProject" "graphicProject"; }
-    @media (min-width: 1280px) {
-      .design-container.two-rows {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: "webProject appProject" "webProject graphicProject";
-        column-gap: 24px; } }
+  @media (min-width: 1280px) {
+    .design-container {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "webProject appProject" "webProject graphicProject";
+      column-gap: 24px; } }
   .design-container[data-page="web-design"] {
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "appProject" "graphicProject"; }
@@ -534,6 +533,15 @@ a {
       .design-container[data-page="app-design"] {
         grid-template-columns: 1fr 1fr;
         grid-template-areas: "webProject graphicProject";
+        grid-template-rows: 1fr;
+        column-gap: 24px; } }
+  .design-container[data-page="graphic-design"] {
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "appProject" "webProject"; }
+    @media (min-width: 1280px) {
+      .design-container[data-page="graphic-design"] {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "appProject webProject";
         grid-template-rows: 1fr;
         column-gap: 24px; } }
   .design-container .web-project-container {
@@ -783,6 +791,9 @@ a {
       display: flex;
       text-align: left;
       gap: 40px; } }
+  @media (min-width: 1280px) {
+    .footer-container .footer-contact-container .footer-info-container {
+      gap: 200px; } }
   .footer-container .footer-contact-container .footer-info-container .footer-office-info {
     opacity: 0.5;
     margin-bottom: 40px; }
@@ -824,6 +835,9 @@ a {
       border-radius: 15px; } }
   .web-intro-container h1 {
     margin-bottom: 24px; }
+  @media (min-width: 1280px) {
+    .web-intro-container p {
+      padding: 0 200px; } }
 
 /****************************************
 *****************Projects****************
@@ -850,6 +864,8 @@ a {
     .web-projects-container .web-section-container:hover {
       background-color: #e7816b;
       color: white; }
+      .web-projects-container .web-section-container:hover .web-text-container h3 {
+        color: white; }
     @media (min-width: 768px) {
       .web-projects-container .web-section-container {
         display: flex; } }
