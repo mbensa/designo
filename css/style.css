@@ -820,27 +820,34 @@ a {
 *****************Projects****************
 ****************************************/
 .web-projects-container {
-  margin: 96px 24px; }
+  margin: 96px 24px;
+  cursor: pointer; }
   @media (min-width: 768px) {
     .web-projects-container {
       margin: 96px 0; } }
   @media (min-width: 1280px) {
     .web-projects-container {
-      display: flex;
-      flex-wrap: wrap; } }
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gird-template-rows: 1fr 1fr;
+      column-gap: 30px;
+      row-gap: 30px; } }
   .web-projects-container .web-section-container {
     background-color: #fdf3f0;
     border-radius: 15px;
     margin-bottom: 40px; }
     .web-projects-container .web-section-container:last-child {
       margin-bottom: 0; }
+    .web-projects-container .web-section-container:hover {
+      background-color: #e7816b;
+      color: white; }
     @media (min-width: 768px) {
       .web-projects-container .web-section-container {
         display: flex; } }
     @media (min-width: 1280px) {
       .web-projects-container .web-section-container {
         flex-direction: column;
-        max-width: calc(100% / 3); } }
+        margin-bottom: 0; } }
     .web-projects-container .web-section-container img {
       max-width: 100%;
       border-top-left-radius: 15px;
