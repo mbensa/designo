@@ -579,31 +579,35 @@ a {
     cursor: pointer;
     text-align: center;
     border-radius: 15px;
-    color: white;
     padding: 90px 65px;
     position: relative; }
     .design-container .project-container:hover .project-overlay {
       background-color: #e7816b; }
-    .design-container .project-container .project-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      border-radius: 15px;
-      width: 100%;
-      height: 100%;
-      background-color: black;
-      opacity: 0.5; }
-    .design-container .project-container h2 {
+    .design-container .project-container a {
+      color: white;
       z-index: 5; }
-    .design-container .project-container .project-text-container {
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-      align-items: center;
-      margin-top: 15px;
-      z-index: 5; }
+      .design-container .project-container a .project-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        border-radius: 15px;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.5;
+        z-index: -2; }
+      .design-container .project-container a h2 {
+        z-index: 5; }
+      .design-container .project-container a .project-text-container {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        align-items: center;
+        margin-top: 15px;
+        z-index: 5;
+        color: white; }
 
 /****************************************
 *************Traits section**************
@@ -898,3 +902,159 @@ a {
       .web-projects-container .web-section-container .web-text-container h3 {
         color: #e7816b;
         margin-bottom: 15px; }
+
+/****************************************
+*************About Us Intro**************
+****************************************/
+.about-intro {
+  background-image: url(../assets/about/desktop/bg-pattern-hero-about-desktop.svg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-color: #e7816b;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; }
+  @media (min-width: 768px) {
+    .about-intro {
+      border-radius: 15px;
+      margin-bottom: 120px; } }
+  @media (min-width: 1280px) {
+    .about-intro {
+      flex-direction: row; } }
+  @media (min-width: 1280px) {
+    .about-intro picture {
+      order: 2; } }
+  .about-intro picture .about-intro-bg-image {
+    width: 100%; }
+    @media (min-width: 1280px) {
+      .about-intro picture .about-intro-bg-image {
+        height: 100%;
+        width: auto; } }
+  .about-intro .about-intro-text {
+    padding: 51px 24px 109px 24px;
+    color: white;
+    text-align: center; }
+    @media (min-width: 1280px) {
+      .about-intro .about-intro-text {
+        order: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 90px;
+        text-align: left; } }
+    .about-intro .about-intro-text h1 {
+      margin-bottom: 24px; }
+
+/****************************************
+***************About Talent**************
+****************************************/
+.about-talent {
+  background-image: url(../assets/shared/desktop/bg-pattern-three-circles.svg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-size: contain;
+  background-color: #fdf3f0;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 120px; }
+  @media (min-width: 768px) {
+    .about-talent {
+      border-radius: 15px; } }
+  @media (min-width: 1280px) {
+    .about-talent {
+      flex-direction: row; } }
+  .about-talent picture .about-talent-bg-image {
+    width: 100%; }
+    @media (min-width: 1280px) {
+      .about-talent picture .about-talent-bg-image {
+        height: 100%;
+        width: auto; } }
+  .about-talent .about-talent-text {
+    padding: 80px 24px;
+    text-align: center; }
+    @media (min-width: 1280px) {
+      .about-talent .about-talent-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 96px;
+        text-align: left; } }
+    .about-talent .about-talent-text h2 {
+      color: #e7816b;
+      margin-bottom: 24px; }
+    .about-talent .about-talent-text p:first-of-type {
+      margin-bottom: 24px; }
+
+/****************************************
+*************About Locations*************
+****************************************/
+.about-locations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 138px; }
+  @media (min-width: 1280px) {
+    .about-locations {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: baseline; } }
+  .about-locations .about-country-container {
+    text-align: center;
+    margin-bottom: 68px; }
+    .about-locations .about-country-container:last-child {
+      margin-bottom: 0; }
+    .about-locations .about-country-container h3 {
+      letter-spacing: 5px;
+      margin-bottom: 50px; }
+    .about-locations .about-country-container a {
+      background-color: #e7816b;
+      color: white;
+      padding: 18px;
+      border-radius: 8px; }
+      .about-locations .about-country-container a:hover {
+        background-color: #ffad9b; }
+
+/****************************************
+*************About Real Deal*************
+****************************************/
+.about-real-deal {
+  background-image: url(../assets/shared/desktop/bg-pattern-three-circles.svg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  overflow: hidden;
+  background-color: #fdf3f0;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 120px; }
+  @media (min-width: 768px) {
+    .about-real-deal {
+      border-radius: 15px; } }
+  @media (min-width: 1280px) {
+    .about-real-deal {
+      flex-direction: row; } }
+  @media (min-width: 1280px) {
+    .about-real-deal picture {
+      order: 2; } }
+  .about-real-deal picture .about-real-deal-bg-image {
+    width: 100%; }
+    @media (min-width: 1280px) {
+      .about-real-deal picture .about-real-deal-bg-image {
+        height: 100%;
+        width: auto; } }
+  .about-real-deal .about-real-deal-text {
+    padding: 80px 24px;
+    text-align: center; }
+    @media (min-width: 1280px) {
+      .about-real-deal .about-real-deal-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 96px;
+        text-align: left; } }
+    .about-real-deal .about-real-deal-text h2 {
+      color: #e7816b;
+      margin-bottom: 24px; }
+    .about-real-deal .about-real-deal-text p:first-of-type {
+      margin-bottom: 24px; }
