@@ -1,0 +1,94 @@
+/****************************************
+****************Locations****************
+****************************************/
+.locations {
+  .location-container {
+    margin-bottom: 40px;
+    &:last-child {
+      margin-bottom: 120px;
+    }
+
+    @media (min-width: 1280px) {
+      display: flex;
+      height: 320px;
+      width: 100%;
+    }
+
+    .map {
+      height: 320px;
+
+      @media (min-width: 768px) {
+        border-radius: 15px;
+        margin-bottom: 30px;
+      }
+
+      @media (min-width: 1280px) {
+        width: 30%;
+        order: 2;
+        margin-left: 30px;
+      }
+    }
+
+    #map-au {
+      order: inherit;
+      margin-left: 0;
+      margin-right: 30px;
+    }
+
+    .locations-text-container {
+      background-color: $light-pink;
+      background-image: url(../assets/shared/desktop/bg-pattern-three-circles.svg);
+      background-position: left;
+      background-repeat: no-repeat;
+      text-align: center;
+      padding: 80px 0;
+
+      @media (min-width: 768px) {
+        text-align: left;
+        padding: 88px 75px;
+      }
+
+      @media (min-width: 1280px) {
+        width: 70%;
+        border-radius: 15px;
+      }
+
+      h1 {
+        color: $peach;
+        margin-bottom: 24px;
+      }
+
+      .locations-contact-container {
+        @media (min-width: 768px) {
+          display: flex;
+        }
+
+        .locations-office-info {
+          margin-bottom: 24px;
+
+          @media (min-width: 768px) {
+            width: 50%;
+          }
+
+          p {
+            &:first-of-type {
+              font-weight: bold;
+            }
+          }
+        }
+
+        .locations-contact-info {
+          @media (min-width: 768px) {
+            width: 50%;
+          }
+
+          p {
+            &:first-of-type {
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+}

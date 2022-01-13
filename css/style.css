@@ -1058,3 +1058,64 @@ a {
       margin-bottom: 24px; }
     .about-real-deal .about-real-deal-text p:first-of-type {
       margin-bottom: 24px; }
+
+/****************************************
+****************Locations****************
+****************************************/
+.locations .location-container {
+  margin-bottom: 40px; }
+  .locations .location-container:last-child {
+    margin-bottom: 120px; }
+  @media (min-width: 1280px) {
+    .locations .location-container {
+      display: flex;
+      height: 320px;
+      width: 100%; } }
+  .locations .location-container .map {
+    height: 320px; }
+    @media (min-width: 768px) {
+      .locations .location-container .map {
+        border-radius: 15px;
+        margin-bottom: 30px; } }
+    @media (min-width: 1280px) {
+      .locations .location-container .map {
+        width: 30%;
+        order: 2;
+        margin-left: 30px; } }
+  .locations .location-container #map-au {
+    order: inherit;
+    margin-left: 0;
+    margin-right: 30px; }
+  .locations .location-container .locations-text-container {
+    background-color: #fdf3f0;
+    background-image: url(../assets/shared/desktop/bg-pattern-three-circles.svg);
+    background-position: left;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 80px 0; }
+    @media (min-width: 768px) {
+      .locations .location-container .locations-text-container {
+        text-align: left;
+        padding: 88px 75px; } }
+    @media (min-width: 1280px) {
+      .locations .location-container .locations-text-container {
+        width: 70%;
+        border-radius: 15px; } }
+    .locations .location-container .locations-text-container h1 {
+      color: #e7816b;
+      margin-bottom: 24px; }
+    @media (min-width: 768px) {
+      .locations .location-container .locations-text-container .locations-contact-container {
+        display: flex; } }
+    .locations .location-container .locations-text-container .locations-contact-container .locations-office-info {
+      margin-bottom: 24px; }
+      @media (min-width: 768px) {
+        .locations .location-container .locations-text-container .locations-contact-container .locations-office-info {
+          width: 50%; } }
+      .locations .location-container .locations-text-container .locations-contact-container .locations-office-info p:first-of-type {
+        font-weight: bold; }
+    @media (min-width: 768px) {
+      .locations .location-container .locations-text-container .locations-contact-container .locations-contact-info {
+        width: 50%; } }
+    .locations .location-container .locations-text-container .locations-contact-container .locations-contact-info p:first-of-type {
+      font-weight: bold; }

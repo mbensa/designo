@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -32,99 +38,61 @@
     </header>
 
     <main>
-      <section class="intro-container">
-        <div class="intro-text-container">
-          <h1>Award-winning custom designs and digital branding solutions</h1>
-          <p>
-            With over 10 years in the industry, we are experienced in creating fully responsive websites, app design,
-            and engaging brand experiences. Find out more about our services.
-          </p>
-          <a class="intro-text-link" href="">LEARN MORE</a>
-        </div>
-        <div class="intro-img-container">
-          <img class="intro-img" src="assets/home/desktop/image-phone.png" alt="image of a phone" />
-        </div>
-      </section>
-
-      <section class="design-container">
-        <div class="web-project-container project-container">
-          <a href="web-design.html">
-            <div class="project-overlay"></div>
-            <h2>WEB DESIGN</h2>
-            <div class="project-text-container">
-              <p>VIEW PROJECTS</p>
-              <img src="assets/shared/desktop/icon-right-arrow.svg" alt="right arrow" />
+      <section class="locations">
+        <div class="location-container">
+          <div class="map" id="map-ca"></div>
+          <div class="locations-text-container">
+            <h1>Canada</h1>
+            <div class="locations-contact-container">
+              <div class="locations-office-info">
+                <p>Designo Central Office</p>
+                <p>3886 Wellington Street</p>
+                <p>Toronto, Ontario M9C 3J5</p>
+              </div>
+              <div class="locations-contact-info">
+                <p>Contact</p>
+                <p>P : +1 253-863-8967</p>
+                <p>M : contact@designo.co</p>
+              </div>
             </div>
-          </a>
+          </div>
         </div>
 
-        <div class="app-project-container project-container">
-          <a href="app-design.html">
-            <div class="project-overlay"></div>
-            <h2>APP DESIGN</h2>
-            <div class="project-text-container">
-              <p>VIEW PROJECTS</p>
-              <img src="assets/shared/desktop/icon-right-arrow.svg" alt="right arrow" />
+        <div class="location-container">
+          <div class="map" id="map-au"></div>
+          <div class="locations-text-container">
+            <h1>Australia</h1>
+            <div class="locations-contact-container">
+              <div class="locations-office-info">
+                <p>Designo AU Office</p>
+                <p>19 Balonne Street</p>
+                <p>New South Wales 2443</p>
+              </div>
+              <div class="locations-contact-info">
+                <p>Contact</p>
+                <p>P : (02) 6720 9092</p>
+                <p>M : contact@designo.au</p>
+              </div>
             </div>
-          </a>
+          </div>
         </div>
 
-        <div class="graphic-project-container project-container">
-          <a href="graphic-design.html">
-            <div class="project-overlay"></div>
-            <h2>GRAPHIC DESIGN</h2>
-            <div class="project-text-container">
-              <p>VIEW PROJECTS</p>
-              <img src="assets/shared/desktop/icon-right-arrow.svg" alt="right arrow" />
+        <div class="location-container">
+          <div class="map" id="map-uk"></div>
+          <div class="locations-text-container">
+            <h1>United Kingdom</h1>
+            <div class="locations-contact-container">
+              <div class="locations-office-info">
+                <p>Designo UK Office</p>
+                <p>13 Colorado Way</p>
+                <p>Rhyd-y-fro SA8 9GA</p>
+              </div>
+              <div class="locations-contact-info">
+                <p>Contact</p>
+                <p>P : 078 3115 1400</p>
+                <p>M : contact@designo.uk</p>
+              </div>
             </div>
-          </a>
-        </div>
-      </section>
-
-      <section class="description-container">
-        <div class="traits-container">
-          <div class="traits-image">
-            <img class="bg-circle" src="assets/home/desktop/bg-pattern-hero-home.svg" alt="background circle" />
-            <img
-              src="assets/home/desktop/illustration-passionate.svg"
-              alt="image of a person sitting behind a desk with a tablet"
-            />
-          </div>
-          <div class="traits-description">
-            <h3>PASSIONATE</h3>
-            <p>
-              Each project starts with an in-depth brand research to ensure we only create products that serve a
-              purpose. We merge art, design, and technology into exciting new solutions.
-            </p>
-          </div>
-        </div>
-        <div class="traits-container">
-          <div class="traits-image">
-            <img class="bg-circle" src="assets/home/desktop/bg-pattern-hero-home.svg" alt="background circle" />
-            <img
-              src="assets/home/desktop/illustration-resourceful.svg"
-              alt="image of a person sitting behind a desk drawing on a tablet"
-            />
-          </div>
-          <div class="traits-description">
-            <h3>RESOURCEFUL</h3>
-            <p>
-              Everything that we do has a strategic purpose. We use an agile approach in all of our projects and value
-              customer collaboration. It guarantees superior results that fulfill our clients’ needs.
-            </p>
-          </div>
-        </div>
-        <div class="traits-container">
-          <div class="traits-image">
-            <img class="bg-circle" src="assets/home/desktop/bg-pattern-hero-home.svg" alt="background circle" />
-            <img src="assets/home/desktop/illustration-friendly.svg" alt="image of two people holding a large tablet" />
-          </div>
-          <div class="traits-description">
-            <h3>FRIENDLY</h3>
-            <p>
-              We are a group of enthusiastic folks who know how to put people first. Our success depends on our
-              customers, and we strive to give them the best experience a company can provide.
-            </p>
           </div>
         </div>
       </section>
@@ -206,7 +174,11 @@
         </div>
       </div>
     </footer>
-
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
     <script src="js/scripts.js"></script>
   </body>
 </html>
