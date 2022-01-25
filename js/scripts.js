@@ -86,4 +86,6 @@ function validateForm() {
   validateEmail();
 }
 
-document.getElementById("submit").addEventListener("click", validateForm);
+if (document.getElementById("contact")) {
+  document.getElementById("submit").addEventListener("click", validateForm);
+}
