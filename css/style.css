@@ -1163,7 +1163,8 @@ a {
     display: flex;
     flex-direction: column; }
     .contact .contact-form-container .contact-form .contact-input-container {
-      height: 3rem; }
+      height: 3rem;
+      position: relative; }
       .contact .contact-form-container .contact-form .contact-input-container:last-of-type {
         margin-bottom: 125px; }
       .contact .contact-form-container .contact-form .contact-input-container .input {
@@ -1175,10 +1176,24 @@ a {
         outline: none;
         padding: 10px 10px;
         margin-bottom: 10px;
-        color: white; }
+        color: white;
+        cursor: pointer;
+        position: absolute;
+        z-index: 2; }
         .contact .contact-form-container .contact-form .contact-input-container .input::placeholder {
           color: white;
           opacity: 0.5; }
+        .contact .contact-form-container .contact-form .contact-input-container .input:focus {
+          border-bottom: 3px solid white; }
+      .contact .contact-form-container .contact-form .contact-input-container .error-message {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-style: italic;
+        line-height: 2.6rem; }
+        .contact .contact-form-container .contact-form .contact-input-container .error-message p {
+          margin-right: 10px; }
       .contact .contact-form-container .contact-form .contact-input-container #text {
         width: 100%;
         height: 125px; }
@@ -1187,7 +1202,11 @@ a {
       border: none;
       border-radius: 8px;
       width: fit-content;
-      align-self: center; }
+      align-self: center;
+      cursor: pointer; }
+      .contact .contact-form-container .contact-form #submit:hover {
+        background-color: #ffad9b;
+        color: white; }
       @media (min-width: 1280px) {
         .contact .contact-form-container .contact-form #submit {
           align-self: end; } }

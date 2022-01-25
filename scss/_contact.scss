@@ -53,6 +53,7 @@
 
       .contact-input-container {
         height: 3rem;
+        position: relative;
         &:last-of-type {
           margin-bottom: 125px;
         }
@@ -67,10 +68,29 @@
           padding: 10px 10px;
           margin-bottom: 10px;
           color: white;
+          cursor: pointer;
+          position: absolute;
+          z-index: 2;
 
           &::placeholder {
             color: white;
             opacity: 0.5;
+          }
+
+          &:focus {
+            border-bottom: 3px solid white;
+          }
+        }
+
+        .error-message {
+          position: relative;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          font-style: italic;
+          line-height: 2.6rem;
+          p {
+            margin-right: 10px;
           }
         }
 
@@ -86,6 +106,12 @@
         border-radius: 8px;
         width: fit-content;
         align-self: center;
+        cursor: pointer;
+
+        &:hover {
+          background-color: $light-peach;
+          color: white;
+        }
 
         @media (min-width: 1280px) {
           align-self: end;

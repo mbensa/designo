@@ -42,20 +42,24 @@
           </p>
         </div>
         <div class="contact-form-container">
-          <form class="contact-form">
+          <form class="contact-form" name="myForm">
             <div class="contact-input-container">
               <input type="text" id="name" name="user-name" class="input" placeholder="Name" />
+              <div class="error-message"></div>
             </div>
             <div class="contact-input-container">
               <input tpye="email" id="email" name="user-email" class="input" placeholder="Email Address" />
+              <div class="error-message"></div>
             </div>
             <div class="contact-input-container">
               <input type="tel" id="phone" name="user-phone" class="input" placeholder="Phone" />
+              <div class="error-message"></div>
             </div>
             <div class="contact-input-container">
               <textarea id="text" name="user-text" class="input" placeholder="Your Message"></textarea>
+              <div class="error-message"></div>
             </div>
-            <button type="submit" id="submit">SUBMIT</button>
+            <button type="button" id="submit">SUBMIT</button>
           </form>
         </div>
       </section>
