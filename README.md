@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Designo](https://www.designo.mbensa.com)
+- Live Site URL: [Designo](https://designo.mbensa.com/)
 
 ## Built with
 
